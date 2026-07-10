@@ -1,0 +1,44 @@
+# =============================================================================
+# AI-Driven Smart Irrigation System - Configuration
+# =============================================================================
+
+log_level: INFO
+
+serial:
+  port: "COM3"              # Windows e.g. COM3, Linux e.g. /dev/ttyUSB0
+  baud_rate: 9600
+  timeout: 2.0
+  read_interval_sec: 2.0
+
+thresholds:
+  soil_moisture_low: 30.0
+  soil_moisture_high: 70.0
+  temperature_low: 15.0
+  temperature_high: 40.0
+  humidity_low: 20.0
+  humidity_high: 90.0
+  light_low: 100.0
+  light_high: 900.0
+
+rl:
+  n_episodes: 600
+  max_steps_per_episode: 96      # 96 x 15-min steps = 1 simulated day
+  learning_rate: 0.15
+  discount_factor: 0.95
+  epsilon_start: 1.0
+  epsilon_min: 0.05
+  epsilon_decay: 0.99
+  n_moisture_bins: 5
+  n_temp_bins: 4
+  n_humidity_bins: 4
+  n_light_bins: 3
+  water_cost_per_action: 2.5
+  random_seed: 42
+
+paths:
+  data_dir: "data"
+  models_dir: "models"
+  outputs_dir: "outputs"
+  q_table_file: "models/q_table.pkl"
+  sensor_log_file: "data/sensor_log.csv"
+  training_log_file: "outputs/training_log.csv"

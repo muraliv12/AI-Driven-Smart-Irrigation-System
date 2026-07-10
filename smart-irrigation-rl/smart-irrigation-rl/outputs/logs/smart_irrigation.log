@@ -1,0 +1,31 @@
+2026-07-10 07:05:09,419 | INFO     | src.rl.q_learning_agent | Q-table saved to /tmp/tmpcweuaf8c/q_table.pkl (1 states).
+2026-07-10 07:05:09,420 | INFO     | src.rl.q_learning_agent | Q-table loaded from /tmp/tmpcweuaf8c/q_table.pkl (1 states).
+2026-07-10 07:05:13,591 | INFO     | src.rl.train | Starting training: 600 episodes, 96 steps/episode, state space (5, 4, 4, 3)
+2026-07-10 07:05:13,938 | INFO     | src.rl.train | Episode   50/600 | reward=-444.75 | water_used=39 | avg_sis=38.5 | epsilon=0.605
+2026-07-10 07:05:14,302 | INFO     | src.rl.train | Episode  100/600 | reward=-371.44 | water_used=16 | avg_sis=40.7 | epsilon=0.366
+2026-07-10 07:05:14,302 | INFO     | src.rl.q_learning_agent | Q-table saved to models/q_table.pkl (27 states).
+2026-07-10 07:05:14,683 | INFO     | src.rl.train | Episode  150/600 | reward=-353.12 | water_used=15 | avg_sis=42.5 | epsilon=0.221
+2026-07-10 07:05:15,080 | INFO     | src.rl.train | Episode  200/600 | reward=-340.37 | water_used=11 | avg_sis=43.3 | epsilon=0.134
+2026-07-10 07:05:15,081 | INFO     | src.rl.q_learning_agent | Q-table saved to models/q_table.pkl (38 states).
+2026-07-10 07:05:15,508 | INFO     | src.rl.train | Episode  250/600 | reward=-315.62 | water_used=9 | avg_sis=47.5 | epsilon=0.081
+2026-07-10 07:05:15,958 | INFO     | src.rl.train | Episode  300/600 | reward=-104.11 | water_used=4 | avg_sis=78.2 | epsilon=0.050
+2026-07-10 07:05:15,958 | INFO     | src.rl.q_learning_agent | Q-table saved to models/q_table.pkl (46 states).
+2026-07-10 07:05:16,378 | INFO     | src.rl.train | Episode  350/600 | reward=-335.38 | water_used=6 | avg_sis=42.1 | epsilon=0.050
+2026-07-10 07:05:16,800 | INFO     | src.rl.train | Episode  400/600 | reward=-283.38 | water_used=5 | avg_sis=53.9 | epsilon=0.050
+2026-07-10 07:05:16,801 | INFO     | src.rl.q_learning_agent | Q-table saved to models/q_table.pkl (47 states).
+2026-07-10 07:05:17,215 | INFO     | src.rl.train | Episode  450/600 | reward=47.11 | water_used=2 | avg_sis=92.0 | epsilon=0.050
+2026-07-10 07:05:17,664 | INFO     | src.rl.train | Episode  500/600 | reward=-251.07 | water_used=1 | avg_sis=57.6 | epsilon=0.050
+2026-07-10 07:05:17,665 | INFO     | src.rl.q_learning_agent | Q-table saved to models/q_table.pkl (49 states).
+2026-07-10 07:05:18,089 | INFO     | src.rl.train | Episode  550/600 | reward=41.30 | water_used=0 | avg_sis=91.6 | epsilon=0.050
+2026-07-10 07:05:18,530 | INFO     | src.rl.train | Episode  600/600 | reward=28.07 | water_used=3 | avg_sis=91.3 | epsilon=0.050
+2026-07-10 07:05:18,531 | INFO     | src.rl.q_learning_agent | Q-table saved to models/q_table.pkl (50 states).
+2026-07-10 07:05:18,531 | INFO     | src.rl.q_learning_agent | Q-table saved to models/q_table.pkl (50 states).
+2026-07-10 07:05:18,532 | INFO     | src.rl.train | Training complete. Final Q-table has 50 states.
+2026-07-10 07:05:18,758 | INFO     | src.analytics.dashboard | Saved plot to outputs/reward_convergence.png
+2026-07-10 07:05:18,949 | INFO     | src.analytics.dashboard | Saved plot to outputs/sis_trend.png
+2026-07-10 07:05:18,950 | INFO     | __main__ | Training artifacts written to outputs
+2026-07-10 07:05:19,489 | INFO     | src.rl.q_learning_agent | Q-table loaded from models/q_table.pkl (50 states).
+2026-07-10 07:05:20,876 | INFO     | src.rl.evaluate | Evaluation summary: {'rl_avg_water_events': 1.25, 'baseline_avg_water_events': 1.89, 'water_reduction_pct': 33.86, 'rl_avg_sis': 86.6, 'baseline_avg_sis': 79.27}
+2026-07-10 07:05:21,018 | INFO     | src.analytics.dashboard | Saved plot to outputs/water_usage_comparison.png
+2026-07-10 07:05:21,018 | INFO     | src.analytics.dashboard | Water usage reduction vs. baseline: 33.9%
+2026-07-10 07:05:21,233 | INFO     | src.analytics.dashboard | Saved plot to outputs/irrigation_timeline.png
